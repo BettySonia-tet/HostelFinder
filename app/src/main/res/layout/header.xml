@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#019484"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="5dp"
+    android:layout_height="210dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hostel Finder"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/nav_header_user_image"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/hostelfinder"/>
+    <TextView
+        android:id="@+id/nav_header_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Names"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+    <TextView
+        android:id="@+id/nav_header_user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email address"
+        android:textSize="17sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#fff"/>
+
+
+
+</LinearLayout>

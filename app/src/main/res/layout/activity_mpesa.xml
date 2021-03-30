@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/purple"
+        tools:context=".Activities.MpesaActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/mpesa_logo" />
+
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="353dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:ems="10"
+                android:hint="+254701234568"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <EditText
+                android:id="@+id/etAmount"
+                android:layout_width="356dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="Amount to pay"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:inputType="number"
+                app:layout_constraintTop_toBottomOf="@+id/etPhone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="71dp" />
+
+            <Button
+                android:id="@+id/btnPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Now"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/etAmount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="139dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hostelName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cookie"
+            android:gravity="center_horizontal"
+            android:textColor="@color/blue"
+            android:textSize="40sp"
+            android:text="The name of the hostel"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/hostelfinder"/>
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/hostelfinder"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/hostelfinder"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtLocation"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_margin="1dp"
+                android:text="Location"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtType"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_margin="1dp"
+                android:text="Type"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtShare"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="Sharing"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_margin="1dp"
+                android:text="Price"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtAvSpaces"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_margin="1dp"
+                android:text="Available Spaces"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Rules"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtRules"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="Rules"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/bookBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed to Book"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <Button
+            android:id="@+id/showLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Location"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

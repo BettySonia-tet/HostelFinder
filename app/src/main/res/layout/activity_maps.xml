@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    tools:context=".Activities.MapsActivity">
+
+<com.google.android.gms.maps.MapView
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_gravity="bottom">
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+            <EditText
+        android:id="@+id/hosteLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter hostel location"
+        android:padding="10dp"
+        android:drawableStart="@drawable/ic_location"
+        android:drawablePadding="10dp"
+        android:layout_margin="10dp"
+        android:textSize="20sp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/menusearch"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_menu_search_"
+                android:layout_marginLeft="-60dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/setLocationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Location"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+
+</FrameLayout>
